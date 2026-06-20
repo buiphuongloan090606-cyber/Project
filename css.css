@@ -1,0 +1,324 @@
+:root{
+    --main_color:#ffffff;
+    --main_color2:#f1f1f1;
+    --main_color3:#f2f2fe;
+    --main_color_chu:#777777;
+}
+
+.header{
+    
+    /* margin: 0 auto; */
+    padding: 25px 10px;
+    position: fixed;
+    top: 20px;
+    left: 15vw;
+    z-index: 100;
+    width: 70vw;
+   font-size: clamp(8px,15px,20px);
+    
+    background-color: var(--main_color);
+}  
+.header >div{
+    padding: 0 10px;
+    display: flex;
+    
+}
+.section1{
+    background-image: url(image/banner-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: var(--main_color);
+    min-height: 90vh;
+    position: relative;
+
+}
+.section1 .row{
+max-width: 50vw;
+    min-height: 90vh;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+.section1 h3{
+    font-size: clamp(10px, 20px, 100px);
+    font-weight: 400;
+}
+.section1 p{
+    font-size: clamp(10px, 15px, 30px);
+    font-weight: 200;
+    margin-top: 2rem;
+}
+.section1 button{
+    width: 33%;
+    padding:10px 15px ;
+    background-color: #ff589e;
+    color: var(--main_color);
+    font-size: clamp(5px,15px,25px);
+    border: none;
+    border-radius: 20px;
+    margin-top: 2rem;
+}
+.section1 button:hover{
+    background-color: #8261ee;
+}
+.section2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: -90px; /* nếu muốn đè lên section trên */
+   position: relative;
+    z-index: 1;
+}
+.section2 > div{
+    
+     max-width: 350px;
+    background: var(--main_color);
+    
+    border-radius: 15px;
+    text-align: center;
+    
+    padding: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    
+}
+.section2>div >div:first-child{
+    max-width:30%;
+    aspect-ratio:1/1 ;
+    font-size: clamp(20px,40px,50px);
+    color: white;
+    background: #8261ee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.section2>div >div:first-child:hover{
+    background: #ff589e;
+}
+.section2 h3{
+    font-size: clamp(10px,18px,25px);
+    font-weight: 600;
+    margin-top: 20px;
+}
+.section2 p{
+    color:var(--main_color_chu) ;
+    font-size: clamp(5px,12px,20px);
+}
+.section3,.section4{
+    margin-top: 7rem;
+    
+}
+.section3 img{
+    color: #9d5bd9;
+    max-width: 90%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-self: center;
+}
+.section3 h5,.section4 h5{
+    font-size: clamp(5px, 25px, 30px);
+}
+.section3 p, .section4 p{
+    font-size: clamp(5px, 18px, 25px);
+    color: var(--main_color_chu);
+
+}
+.section4 img{
+    display: flex;
+    justify-self: end;
+}
+.section5{
+    background-image: url(image/work-process-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 7rem;
+    
+}
+.section5 .container{
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+.section5 .row:first-child{
+    color: var(--main_color);
+    text-align: center;
+}
+.section5 .row:last-child > div{
+    background: var(--main_color);
+    
+    margin: 15px;
+    border-radius: 15px;
+    padding: 5px;
+    box-shadow: 15px 10px 0 #a36fd4;
+   
+   
+}
+
+.section5 .row:last-child > div img{
+    margin: 20px 0;
+}
+.section5 .row:last-child > div h5{
+    margin: 0 20px 0 0;
+    font-weight: 400;
+}
+.section5 .row:last-child > div p{
+    margin: 10px 0;
+    color: var(--main_color_chu);
+    font-weight: 200;
+}
+.section6{
+    text-align: center;
+    margin: 100px 0 50px 0;
+}
+.section6 h2{
+    font-weight: 400;
+    font-size: clamp(15px,25px,35px);
+}
+.section6 p{
+    color:var(--main_color_chu);
+    font-size: clamp(10px,16px,20px);
+}
+.section6 .row:last-child >div{
+    box-shadow: 0 0 15px rgba(0,0,0,0.35);
+   
+    margin: 25px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+}
+.section6 .row:last-child >div img{
+    font-size: 10%;
+}
+.section6 .row:last-child >div p{
+    font-size: clamp(10px, 15px,25px);
+    color: var(--main_color_chu);
+    margin: 10px 0;
+}
+.line-through{
+    text-decoration: line-through;
+}
+.section7{
+    text-align: center;
+    background: var(--main_color3);
+    margin-top: 7rem;
+    padding: 50px 0;
+}
+.section7 h2{
+    font-size: clamp(10px,25px,35px);
+    font-weight: 400;
+}
+.section7 p{
+    color: var(--main_color_chu);
+    font-size: clamp(10px,17px,25px);
+    margin: 10px 0;
+}
+.section7 .row:last-child>div{
+    background: var(--main_color);
+    
+    margin: 20px;
+    border-radius: 15px;
+    padding: 15px 0;
+}
+.box1 h3, .box2 h3{
+   font-size: clamp(10px,17px,25px); 
+   font-weight: 400;
+   
+}
+.box1>div, .box2>div{
+   background: #8261ee; 
+  width: 80%;
+  margin: 15px auto;
+    border-radius: 20px;
+        text-align: center;
+    padding-top: 20px;
+    padding-bottom: 13px;
+
+}
+.box2>div{
+    background: #ff589e;
+}
+.box1 > div span,.box2 > div span{
+    color: white !important;
+    font-size: clamp(10px, 18px,30px);
+}
+.box1 span ,.box2 span{
+    color: var(--main_color_chu);
+    font-size: clamp(5px,13px,20px);
+}
+.box1 button,.box2 button{
+   background: #8261ee; 
+   border: none; 
+   padding: 10px 18px;
+   transition: all 0.3s ease 0s;
+   margin: 25px 0;
+   color: var(--main_color);
+   font-size: clamp(7px,13px,20px);
+}
+@media(min-width:768px){
+    .section2{
+        flex-wrap: wrap;
+        margin-top: 3rem;
+        
+    }
+    .section2 > div{
+        width: 48%;
+        gap:20px;
+    }
+    .section3 .col-xl-6{
+        margin:70px 0 10px 0;
+    }
+    .section4 img{
+         display: block;
+    margin: 0 auto;
+    }
+    .section5 .row:last-child{
+        display: flex;
+   
+    flex-wrap: wrap;
+        margin-right: -15px;
+    margin-left: -15px;
+    }
+    .section5 .col-md-3{
+         flex: 0 0 20%;
+         /* flex-grow: 0 → không tự giãn ra để chiếm thêm chỗ.
+           flex-shrink: 0 → không tự co lại khi thiếu chỗ.
+          flex-basis: 25% → kích thước ban đầu bằng 25% chiều rộng của container. */
+         max-width: 20%;
+    }
+    .section6 .col-md-6{
+        flex:0 0 40%;
+        max-width:40% ;
+    }
+    .section7 .col-md-6{
+    
+        max-width:40%;
+    }
+}
+@media (min-width: 992px) { 
+    .section2>div{
+        max-width: 30%;
+        margin-top: -110px;
+    }
+
+    .section5 .col-lg-2{
+         flex: 0 0 13%;
+         /* flex-grow: 0 → không tự giãn ra để chiếm thêm chỗ.
+           flex-shrink: 0 → không tự co lại khi thiếu chỗ.
+          flex-basis: 25% → kích thước ban đầu bằng 25% chiều rộng của container. */
+         max-width: 13%;
+    }
+    .section6 .col-lg-4{
+        flex:0 0 28%;
+        max-width:28% ;
+    }
+    .section7 .col-lg-4{
+    
+        max-width:28%;
+    }
+
+
+
+ }
