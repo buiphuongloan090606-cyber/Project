@@ -257,6 +257,48 @@ max-width: 50vw;
    color: var(--main_color);
    font-size: clamp(7px,13px,20px);
 }
+@media (min-width: 576px) { 
+    .header >div div:nth-child(n+2){
+        display: none;
+    }
+    .section1 button{
+       min-width: 65%;
+    }
+    .section2{
+        flex-wrap: wrap;
+        justify-content: start;
+        padding: 0 20px;
+        
+    }
+    .section2 >div{
+        width: 46%;
+        
+       
+    }
+    .section3 .col-xl-6{
+        margin-top: 2rem;
+    }
+    .section4 img{
+         display: block;
+    margin: 0 auto;
+    }
+    .section5 .row:last-child{
+       justify-content: center;
+    }
+    .section5 .col-md-3{
+         flex: 0 0 40%;
+         /* flex-grow: 0 → không tự giãn ra để chiếm thêm chỗ.
+           flex-shrink: 0 → không tự co lại khi thiếu chỗ.
+          flex-basis: 25% → kích thước ban đầu bằng 25% chiều rộng của container. */
+         max-width: 40%;
+    }
+    .section6 .row:last-child{
+        justify-content: center;
+    }
+    .section6 .row:last-child>div{
+        min-height:18vh;
+    }
+ }
 @media(min-width:768px){
     .section2{
         flex-wrap: wrap;
