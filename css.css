@@ -257,110 +257,164 @@ max-width: 50vw;
    color: var(--main_color);
    font-size: clamp(7px,13px,20px);
 }
-@media (min-width: 576px) { 
+/* Điện thoại */
+@media (max-width: 575.98px) {
+
     .header >div div:nth-child(n+2){
         display: none;
     }
+
+    .section1 button{
+       min-width: 65%;
+    }
+
+    .section2{
+    display: flex;
+    justify-content: start;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/* Điện thoại */
+.section2 > div{
+    min-width: 45%  !important; 
+    
+     margin-top: 0!important;
+}
+
+    .section3 .col-xl-6{
+        margin-top: 2rem;
+    }
+
+    .section4 img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .section5 .row:last-child{
+       justify-content: center;
+    }
+
+    .section5 .col-md-3{
+         min-width: 40%;
+    }
+
+    .section6 .row:last-child{
+        justify-content: center;
+    }
+
+    .section6 .row:last-child > div{
+        min-height:18vh;
+        min-width: 92%;
+    }
+    .section7 .row:last-child > div{
+        min-height: 35vh;
+        min-width: 92%;
+    }
+}
+
+/* Tablet */
+@media (max-width: 767.98px) {
+    .header >div div:nth-child(n+2){
+        display: none;
+    }
+
     .section1 button{
        min-width: 65%;
     }
     .section2{
         flex-wrap: wrap;
-        justify-content: start;
-        padding: 0 20px;
-        
-    }
-    .section2 >div{
-        width: 46%;
-        
-       
-    }
-    .section3 .col-xl-6{
-        margin-top: 2rem;
-    }
-    .section4 img{
-         display: block;
-    margin: 0 auto;
-    }
-    .section5 .row:last-child{
-       justify-content: center;
-    }
-    .section5 .col-md-3{
-         flex: 0 0 40%;
-         /* flex-grow: 0 → không tự giãn ra để chiếm thêm chỗ.
-           flex-shrink: 0 → không tự co lại khi thiếu chỗ.
-          flex-basis: 25% → kích thước ban đầu bằng 25% chiều rộng của container. */
-         max-width: 40%;
-    }
-    .section6 .row:last-child{
-        justify-content: center;
-    }
-    .section6 .row:last-child>div{
-        min-height:18vh;
-    }
- }
-@media(min-width:768px){
-    .section2{
-        flex-wrap: wrap;
         margin-top: 3rem;
-        
+        justify-content: start;
+        padding: 20px;
     }
-    .section2 > div{
-        width: 48%;
-        gap:20px;
-    }
+   .section2 > div{
+    min-width: 45%  !important; 
+    
+     margin-top: 0!important;
+}
+
+   
+
     .section3 .col-xl-6{
         margin:70px 0 10px 0;
     }
+
     .section4 img{
-         display: block;
-    margin: 0 auto;
+        display:block;
+        margin:0 auto;
     }
+
     .section5 .row:last-child{
-        display: flex;
-   
-    flex-wrap: wrap;
-        margin-right: -15px;
-    margin-left: -15px;
+       justify-content: center;
     }
+
     .section5 .col-md-3{
-         flex: 0 0 20%;
-         /* flex-grow: 0 → không tự giãn ra để chiếm thêm chỗ.
-           flex-shrink: 0 → không tự co lại khi thiếu chỗ.
-          flex-basis: 25% → kích thước ban đầu bằng 25% chiều rộng của container. */
-         max-width: 20%;
+         min-width: 40%;
     }
-    .section6 .col-md-6{
-        flex:0 0 40%;
-        max-width:40% ;
+
+    .section6 .row:last-child{
+        justify-content: center;
     }
-    .section7 .col-md-6{
-    
-        max-width:40%;
+
+    .section6 .row:last-child > div{
+        min-height:18vh;
+        min-width: 92%;
+    }
+    .section7 .row:last-child > div{
+        min-height: 35vh;
+        min-width: 92%;
     }
 }
-@media (min-width: 992px) { 
-    .section2>div{
-        max-width: 30%;
-        margin-top: -110px;
+
+/* Desktop nhỏ */
+@media (max-width: 991.98px) {
+
+    .section2{
+        flex-wrap: wrap;
+        margin-top: 3rem;
+        justify-content: start;
+        
+        padding: 20px;
+    }
+   .section2 > div{
+    min-width: 45%  !important; 
+    
+     margin-top: 0!important;
+}
+.section3 .col-xl-6{
+        margin:70px 0 10px 0;
+    }
+
+    .section4 img{
+        display:block;
+        margin:0 auto;
     }
 
     .section5 .col-lg-2{
-         flex: 0 0 13%;
-         /* flex-grow: 0 → không tự giãn ra để chiếm thêm chỗ.
-           flex-shrink: 0 → không tự co lại khi thiếu chỗ.
-          flex-basis: 25% → kích thước ban đầu bằng 25% chiều rộng của container. */
-         max-width: 13%;
+         flex:0 0 20%;
+         max-width:20%;
     }
+
     .section6 .col-lg-4{
-        flex:0 0 28%;
-        max-width:28% ;
+        max-width:43%;
     }
+
     .section7 .col-lg-4{
-    
+        max-width:43%;
+    }
+}
+    @media (max-width: 1199.98px) { 
+        .section5 .col-lg-2{
+
+         max-width:13%;
+    }
+       .section6 .col-lg-4{
+        flex-wrap: nowrap;
         max-width:28%;
     }
 
-
-
- }
+    .section7 .col-lg-4{
+        max-width:28%;
+    } 
+     }
